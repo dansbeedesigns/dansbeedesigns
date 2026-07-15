@@ -6,8 +6,8 @@ export const youtube = {
   channelUrl: 'https://www.youtube.com/@DansbeeDesigns',
   // Swap this out whenever you want to feature a different video.
   // Just the 11-character ID from the YouTube URL (the part after ?v=).
-  featuredVideoId: 'yssJQ9fix0s',
-  featuredVideoTitle: 'The Hand Plane Mistake That Makes It Completely Useless',
+  featuredVideoId: 'BcwzzNx5HjY',
+  featuredVideoTitle: 'How to Get Lumber Ready to Build With Milling, Surfacing, and What Beginners Need to Know',
 };
 
 export interface ConstellationSite {
