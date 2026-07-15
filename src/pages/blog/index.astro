@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Layout title="Blog | Dansbee Designs" description="Every build, documented start to finish.">
+  <section class="border-b border-teal-mid/30 bg-teal-deep/30">
+    <div class="mx-auto max-w-6xl px-6 py-16">
+      <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">The Builds</p>
+      <h1 class="font-display mt-3 text-4xl font-bold uppercase tracking-tight text-white">
+        Documented Start To Finish
+      </h1>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-4xl px-6 py-16">
+    <ul class="space-y-6">
+      {posts.map((post) => (
+        <li class="group relative border border-teal-mid/30 bg-teal-deep/20 transition-colors hover:border-amber/50">
+          <a href={`/blog/${post.id}/`} class="flex flex-col gap-6 p-6 md:flex-row md:items-center">
+            {post.data.heroImageUrl && (
+              <div class="aspect-[4/3] w-full shrink-0 overflow-hidden md:w-48">
+                <img
+                  src={post.data.heroImageUrl}
+                  alt={post.data.title}
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            )}
+            <div>
+              <p class="font-badge text-xs font-semibold uppercase tracking-[0.15em] text-amber">
+                {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+              <h2 class="font-display mt-2 text-xl font-semibold uppercase tracking-wide text-white group-hover:text-amber">
+                {post.data.title}
+              </h2>
+              {post.data.description && (
+                <p class="mt-2 font-body font-light text-cream/80">{post.data.description}</p>
+              )}
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+    {posts.length === 0 && <p class="text-cream/60">No posts yet — check back soon.</p>}
+  </div>
+</Layout>

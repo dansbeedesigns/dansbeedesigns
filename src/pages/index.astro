@@ -1,0 +1,191 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { youtube, constellation } from '../data/site';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const services = [
+  { name: 'Custom Furniture & Fixtures', desc: 'Solid hardwood pieces built to fit your space, your style, and how you actually live.' },
+  { name: 'Signage & Commercial Fabrication', desc: 'Bespoke design and fabrication for storefronts, offices, and brand spaces.' },
+  { name: 'CNC & Laser Fabrication', desc: 'Parametric design, precision cutting, and finish work for complex geometry.' },
+];
+---
+
+<Layout
+  title="Dansbee Designs | Woodworking At Any Age"
+  description="Woodworking builds documented start to finish — furniture, signage, and custom fabrication, with no sponsors and no affiliate links. Made for anyone starting woodworking at 50 or beyond."
+>
+  <!-- Hero -->
+  <section class="border-b border-teal-mid/30 bg-teal-deep/30">
+    <div class="mx-auto max-w-6xl px-6 py-24">
+      <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">
+        Start Woodworking at 50
+      </p>
+      <h1 class="font-display mt-4 max-w-3xl text-5xl font-bold uppercase leading-[1.05] tracking-tight text-white md:text-6xl">
+        Woodworking <span class="text-amber">at any age.</span>
+      </h1>
+      <p class="mt-6 max-w-xl font-body text-lg font-light leading-relaxed text-cream/90">
+        I'll show you how. Every build documented start to finish — the wins, the mistakes,
+        and everything in between.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a
+          href="/blog"
+          class="inline-block bg-amber px-6 py-3 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-teal-darkest transition-colors hover:bg-amber-light"
+        >
+          See the builds
+        </a>
+        <a
+          href="/about"
+          class="inline-block border border-teal-mid px-6 py-3 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-cream transition-colors hover:border-amber hover:text-amber"
+        >
+          About Cale
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube -->
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <div class="grid gap-10 md:grid-cols-2 md:items-center">
+      <div>
+        <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">
+          On YouTube
+        </p>
+        <h2 class="font-display mt-3 text-3xl font-bold uppercase tracking-tight text-white">
+          Latest From The Channel
+        </h2>
+        <p class="mt-4 font-body font-light leading-relaxed text-cream/85">
+          {youtube.featuredVideoTitle}
+        </p>
+        <a
+          href={youtube.channelUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 inline-block bg-amber px-6 py-3 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-teal-darkest transition-colors hover:bg-amber-light"
+        >
+          Subscribe on YouTube
+        </a>
+      </div>
+      <div class="aspect-video w-full border border-teal-mid/30">
+        <iframe
+          class="h-full w-full"
+          src={`https://www.youtube.com/embed/${youtube.featuredVideoId}`}
+          title={youtube.featuredVideoTitle}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Constellation of sites -->
+  <section class="border-y border-teal-mid/30 bg-teal-deep/30">
+    <div class="mx-auto max-w-6xl px-6 py-20">
+      <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">
+        The Constellation
+      </p>
+      <h2 class="font-display mt-3 text-3xl font-bold uppercase tracking-tight text-white">
+        More Helpful Sites
+      </h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+        {constellation.map((site) => (
+          <a
+            href={site.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex flex-col items-center text-center border border-teal-mid/30 bg-teal-darkest/40 p-6 transition-colors hover:border-amber/50"
+          >
+            {site.logo ? (
+              <img src={site.logo} alt={site.name} class="h-20 w-20" />
+            ) : (
+              <div class="flex h-10 w-10 items-center justify-center border border-teal-mid/50 font-display text-lg font-bold text-amber">
+                {site.name.charAt(0)}
+              </div>
+            )}
+            <h3 class="font-display mt-4 text-base font-semibold uppercase tracking-wide text-white group-hover:text-amber">
+              {site.name}
+            </h3>
+            <p class="mt-2 font-body text-sm font-light text-cream/75">{site.tagline}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Services teaser -->
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <div class="mb-10 flex items-end justify-between">
+      <div>
+        <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">Services</p>
+        <h2 class="font-display mt-3 text-3xl font-bold uppercase tracking-tight text-white">
+          What We Build For Clients
+        </h2>
+      </div>
+      <a href="/services" class="font-badge text-sm font-semibold uppercase tracking-wide text-amber hover:text-amber-light">
+        View all &rarr;
+      </a>
+    </div>
+    <div class="grid gap-8 md:grid-cols-3">
+      {services.map((s) => (
+        <div class="relative border-l border-teal-mid/40 pl-6">
+          <div class="accent-bar-vertical absolute -left-[2px] top-1 h-6"></div>
+          <h3 class="font-display text-lg font-semibold uppercase tracking-wide text-white">{s.name}</h3>
+          <p class="mt-2 font-body font-light leading-relaxed text-cream/85">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Recent builds -->
+  <section class="border-t border-teal-mid/30 bg-teal-deep/30">
+    <div class="mx-auto max-w-6xl px-6 py-20">
+      <div class="mb-10 flex items-end justify-between">
+        <h2 class="font-display text-2xl font-bold uppercase tracking-wide text-white">Recent Builds</h2>
+        <a href="/blog" class="font-badge text-sm font-semibold uppercase tracking-wide text-amber hover:text-amber-light">
+          View all &rarr;
+        </a>
+      </div>
+      <div class="grid gap-8 md:grid-cols-3">
+        {posts.map((post) => (
+          <a href={`/blog/${post.id}/`} class="group flex flex-col border border-teal-mid/30 bg-teal-darkest/40 transition-colors hover:border-amber/50">
+            {post.data.heroImageUrl && (
+              <div class="aspect-[4/3] overflow-hidden">
+                <img
+                  src={post.data.heroImageUrl}
+                  alt={post.data.title}
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+            )}
+            <div class="relative flex flex-1 flex-col p-6">
+              <div class="accent-bar-vertical absolute left-0 top-6 h-8"></div>
+              <p class="font-badge text-xs font-semibold uppercase tracking-[0.15em] text-amber">
+                {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
+              </p>
+              <h3 class="font-display mt-2 text-lg font-semibold uppercase tracking-wide text-white group-hover:text-amber">
+                {post.data.title}
+              </h3>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Ethos -->
+  <section class="mx-auto max-w-3xl px-6 py-20 text-center">
+    <p class="font-badge text-sm font-bold uppercase tracking-[0.25em] text-amber-light">
+      No Sponsors &middot; No Affiliate Links &middot; Just Honest Experience
+    </p>
+    <p class="mt-6 font-body text-xl font-light leading-relaxed text-cream/90">
+      Peace, love, and sawdust — that's the sign-off, and it's the whole philosophy.
+      Every build on this site is real work, real mistakes, and real results.
+    </p>
+  </section>
+</Layout>

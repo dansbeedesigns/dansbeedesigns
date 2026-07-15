@@ -1,0 +1,42 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout
+  title={`${post.data.title} | Dansbee Designs`}
+  description={post.data.description ?? `${post.data.title} — a Dansbee Designs build, documented start to finish.`}
+  image={post.data.heroImageUrl ?? '/images/og-default.png'}
+  type="article"
+  publishedTime={post.data.pubDate}
+>
+  <article class="mx-auto max-w-3xl px-6 py-16">
+    <p class="font-badge text-xs font-semibold uppercase tracking-[0.15em] text-amber mb-2">
+      {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+    </p>
+    <h1 class="font-display text-3xl font-bold uppercase tracking-tight text-white mb-8">{post.data.title}</h1>
+
+    {post.data.heroImage && (
+      <Image src={post.data.heroImage} alt={post.data.title} class="mb-10 w-full" />
+    )}
+    {!post.data.heroImage && post.data.heroImageUrl && (
+      <img src={post.data.heroImageUrl} alt={post.data.title} class="mb-10 w-full" />
+    )}
+
+    <div class="prose prose-invert max-w-none font-body font-light">
+      <Content />
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact | Dansbee Designs" description="Get in touch with Dansbee Designs.">
+  <section class="mx-auto max-w-2xl px-6 py-20 text-center">
+    <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">Contact</p>
+    <h1 class="font-display mt-3 text-4xl font-bold uppercase tracking-tight text-white">
+      Let's Talk
+    </h1>
+    <div class="accent-bar mx-auto mt-6 w-24"></div>
+    <p class="mt-10 font-body text-lg font-light leading-relaxed text-cream/90">
+      Have a project in mind, a question about a build, or just want to say hello?
+      Reach out directly.
+    </p>
+
+    <a
+      id="contact-email-link"
+      href="#"
+      class="mt-8 inline-block bg-amber px-8 py-4 font-badge text-base font-semibold uppercase tracking-[0.1em] text-teal-darkest transition-colors hover:bg-amber-light"
+    >
+      Loading email&hellip;
+    </a>
+
+    <script is:inline data-u="Y2FsZQ==" data-d="ZGFuc2JlZWRlc2lnbnMuY29t">
+      // Email is assembled client-side (not present as plain text in the page
+      // source) to keep it off basic scrapers' radar while staying a normal,
+      // one-click mailto link for real visitors.
+      (function () {
+        const script = document.currentScript;
+        const user = atob(script.dataset.u);
+        const domain = atob(script.dataset.d);
+        const email = user + '@' + domain;
+        const link = document.getElementById('contact-email-link');
+        link.href = 'mailto:' + email;
+        link.textContent = email;
+      })();
+    </script>
+  </section>
+</Layout>

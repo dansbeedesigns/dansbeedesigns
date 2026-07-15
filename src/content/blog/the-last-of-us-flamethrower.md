@@ -1,0 +1,81 @@
+---
+title: "The Last of Us Flamethrower"
+pubDate: 2020-07-19
+heroImageUrl: "https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-25-17.18.45-scaled.jpg"
+tags: []
+---
+
+A super fun cosplay prop project
+
+After watching one of my sons play this game for hours and hours, I fell in love with the story and the characters. It seemed only right to create a cosplay prop weapon from the game for my son to hang on his wall.
+
+Made almost entirely from scrap pieces from around the shop and/or kitchen, this project came together quickly and turned out fantastic!
+
+<div class="aspect-video w-full my-8"><iframe class="w-full h-full" src="https://www.youtube.com/embed/J_Mt7AuxOrU" title="The Last of Us Flamethrower" frameborder="0" allowfullscreen></iframe></div>
+
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.21.24-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.48.57-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.48.57-1.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.52.20-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.52.20-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.53.59-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.53.59-1.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.57.07-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-12.58.12-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-13.22.58-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-13.24.45-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-13.25.39-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-13.28.04-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.13.52-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.14.01-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.14.12-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.38.44-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.38.58-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.52.41-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.53.04-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-14.53.57-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-17.14.03-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-17.14.07-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-17.14.22-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-17.14.31-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-12-17.14.49-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-09.20.35-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-09.20.45-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-09.20.52-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-09.36.39-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-09.37.32-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-09.37.38-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-09.37.49-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-11.43.08-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-14-11.43.18-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-19-13.41.54-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-19-13.42.06-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-19-13.48.24-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-19-14.09.27-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-19-14.09.32-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-19-15.57.05-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-19-15.57.16-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-25-17.17.17-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-25-17.18.11-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-25-17.18.45-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-26-16.39.46-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-26-16.56.08-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-26-17.27.34-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-26-17.27.34-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-26-17.27.49-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.14.30-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.14.30-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.14.43-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.14.43-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.14.55-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.14.55-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.08-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.08-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.20-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.20-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.28-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.29-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.33-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.15.33-1-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.21.12-scaled.jpg)
+![The Last of Us Flamethrower](https://pub-8b57403fb1674705997f89de38e9a50f.r2.dev/2026/02/2020-07-31-18.21.12-1-scaled.jpg)

@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  { name: 'Custom Furniture & Fixtures', desc: 'Solid hardwood pieces built to fit your space, your style, and how you actually live.' },
+  { name: 'Signage & Commercial Fabrication', desc: 'Bespoke design and fabrication for storefronts, offices, and brand spaces.' },
+  { name: 'CNC & Laser Fabrication', desc: 'Parametric design, precision cutting, and finish work for complex geometry.' },
+  { name: 'Design Consultation', desc: 'From concept sketch to 3D model — bring an idea, leave with a plan.' },
+];
+---
+
+<Layout title="Services | Dansbee Designs" description="Custom fabrication, furniture, and design services from Dansbee Designs.">
+  <section class="mx-auto max-w-3xl px-6 py-20">
+    <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">Services</p>
+    <h1 class="font-display mt-3 text-4xl font-bold uppercase tracking-tight text-white">
+      What We Build
+    </h1>
+    <div class="accent-bar mt-6 w-24"></div>
+
+    <div class="mt-12 space-y-8">
+      {services.map((s) => (
+        <div class="relative border-l border-teal-mid/40 pl-6">
+          <div class="accent-bar-vertical absolute -left-[2px] top-1 h-6"></div>
+          <h2 class="font-display text-xl font-semibold uppercase tracking-wide text-white">{s.name}</h2>
+          <p class="mt-2 font-body font-light leading-relaxed text-cream/85">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-16 border border-teal-mid/30 bg-teal-deep/30 p-8 text-center">
+      <p class="font-body text-lg font-light text-cream/90">
+        Have a project in mind? Let's talk about what you're building.
+      </p>
+      <a
+        href="/contact"
+        class="mt-6 inline-block bg-amber px-6 py-3 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-teal-darkest transition-colors hover:bg-amber-light"
+      >
+        Get in touch
+      </a>
+    </div>
+  </section>
+</Layout>

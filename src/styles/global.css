@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Dansbee Designs brand palette */
+  --color-teal-darkest: #0a2020;
+  --color-teal-deep: #123030;
+  --color-teal-accent: #1e4444;
+  --color-teal-mid: #2d6a6a;
+  --color-amber: #e8913a;
+  --color-amber-light: #e8c49a;
+  --color-red: #c0392b;
+  --color-cream: #d4cfc7;
+
+  --font-display: "Oswald", sans-serif;
+  --font-body: "Roboto Slab", serif;
+  --font-badge: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: var(--color-teal-darkest);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-badge {
+  font-family: var(--font-badge);
+}
+
+/* Signature accent bar: amber -> red -> teal, used as the site's recurring motif */
+.accent-bar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-amber) 0%, var(--color-red) 50%, var(--color-teal-mid) 100%);
+}
+
+.accent-bar-vertical {
+  width: 4px;
+  background: linear-gradient(180deg, var(--color-amber) 0%, var(--color-red) 50%, var(--color-teal-mid) 100%);
+}
+
+.prose {
+  --tw-prose-body: var(--color-cream);
+  --tw-prose-headings: #ffffff;
+  --tw-prose-links: var(--color-amber);
+  --tw-prose-bold: #ffffff;
+  --tw-prose-quotes: var(--color-amber-light);
+  --tw-prose-quote-borders: var(--color-amber);
+  --tw-prose-hr: var(--color-teal-mid);
+  --tw-prose-bullets: var(--color-teal-mid);
+}
