@@ -2,20 +2,47 @@
 import Layout from '../layouts/Layout.astro';
 
 const services = [
-  { name: 'Custom Furniture & Fixtures', desc: 'Solid hardwood pieces built to fit your space, your style, and how you actually live.' },
-  { name: 'Signage & Commercial Fabrication', desc: 'Bespoke design and fabrication for storefronts, offices, and brand spaces.' },
-  { name: 'CNC & Laser Fabrication', desc: 'Parametric design, precision cutting, and finish work for complex geometry.' },
-  { name: 'Design Consultation', desc: 'From concept sketch to 3D model — bring an idea, leave with a plan.' },
+  {
+    name: 'Custom Furniture & Fixtures',
+    desc: 'Solid hardwood furniture built to fit your actual space and how you actually live — not off a showroom floor. Dining tables, built-ins, desks, and anything else that needs to be exactly right rather than close enough.',
+  },
+  {
+    name: 'Signage & Commercial Fabrication',
+    desc: 'Sculptural and dimensional signage for storefronts, offices, and brand spaces — the kind of piece that becomes a landmark in the room rather than just a logo on the wall. Design, fabrication, and install handled start to finish.',
+  },
+  {
+    name: 'CNC & Laser Fabrication',
+    desc: 'Parametric design and precision cutting for geometry that hand tools can’t touch — inlay work, repeatable patterns, and complex profiles milled and engraved to tight tolerances.',
+  },
+  {
+    name: 'Design Consultation',
+    desc: 'Have an idea but not a plan? Bring the concept and I’ll take it through sketches, 3D modeling, and material selection until it’s something buildable — yours to build, or mine.',
+  },
+];
+
+const process = [
+  { step: '01', title: 'Consult', desc: 'We talk through the project, the space, and the budget before anything gets designed.' },
+  { step: '02', title: 'Design', desc: 'Concept sketches move into a full 3D model, so you know exactly what you’re getting before material gets cut.' },
+  { step: '03', title: 'Build', desc: 'Fabrication happens in my Colorado shop — traditional joinery and finish work backed by CNC and laser precision where it matters.' },
+  { step: '04', title: 'Install', desc: 'Delivered and installed, or crated and shipped — whichever the project calls for.' },
 ];
 ---
 
-<Layout title="Services | Dansbee Designs" description="Custom fabrication, furniture, and design services from Dansbee Designs.">
+<Layout title="Services | Dansbee Designs" description="Custom furniture, signage, and fabrication services from Dansbee Designs.">
   <section class="mx-auto max-w-3xl px-6 py-20">
     <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">Services</p>
     <h1 class="font-display mt-3 text-4xl font-bold uppercase tracking-tight text-white">
       What We Build
     </h1>
     <div class="accent-bar mt-6 w-24"></div>
+
+    <p class="mt-10 font-body text-lg font-light leading-relaxed text-cream/90">
+      I take on commissioned client work alongside everything you see on the blog —
+      furniture, signage, and fabrication built the same way every project on this site
+      gets built: real materials, real craftsmanship, no shortcuts. Three decades in the
+      shop backed by a background in precision systems engineering means projects get
+      built right the first time, on schedule.
+    </p>
 
     <div class="mt-12 space-y-8">
       {services.map((s) => (
@@ -25,6 +52,22 @@ const services = [
           <p class="mt-2 font-body font-light leading-relaxed text-cream/85">{s.desc}</p>
         </div>
       ))}
+    </div>
+
+    <div class="mt-20">
+      <p class="font-badge text-xs font-semibold uppercase tracking-[0.25em] text-amber">How It Works</p>
+      <h2 class="font-display mt-3 text-2xl font-bold uppercase tracking-tight text-white">
+        From Concept To Install
+      </h2>
+      <div class="mt-10 grid gap-8 sm:grid-cols-2">
+        {process.map((p) => (
+          <div>
+            <span class="font-display text-3xl font-bold text-amber">{p.step}</span>
+            <h3 class="font-display mt-2 text-lg font-semibold uppercase tracking-wide text-white">{p.title}</h3>
+            <p class="mt-2 font-body font-light leading-relaxed text-cream/80">{p.desc}</p>
+          </div>
+        ))}
+      </div>
     </div>
 
     <div class="mt-16 border border-teal-mid/30 bg-teal-deep/30 p-8 text-center">
