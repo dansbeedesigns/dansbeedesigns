@@ -8,8 +8,10 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://dansbeedesigns.com',
 
-  // Pages are statically pre-rendered by default.
-  // API routes and server pages opt in with: export const prerender = false
+  // 'server' mode: all routes go through the Cloudflare Worker.
+  // This avoids the reserved ASSETS binding conflict in Pages prerender configs.
+  // Static files in /public and built assets are still served directly by the CDN.
+  output: 'server',
   adapter: cloudflare(),
 
   vite: {
