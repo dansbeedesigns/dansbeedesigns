@@ -1,0 +1,17 @@
+name = "dansbee-designs"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# ─── R2 bucket for PDFs ──────────────────────────────────────────────────────
+# Create with: npx wrangler r2 bucket create dansbee-guides
+[[r2_buckets]]
+binding = "GUIDES_BUCKET"
+bucket_name = "dansbee-guides"
+
+# ─── D1 database for email leads + download tokens ───────────────────────────
+# Create with: npx wrangler d1 create dansbee-guides-db
+# Then replace REPLACE_WITH_YOUR_D1_DATABASE_ID below with the ID from that command's output.
+[[d1_databases]]
+binding = "DB"
+database_name = "dansbee-guides-db"
+database_id = "f137ed85-25ce-4c68-84c0-5b8b04c8fd65"
