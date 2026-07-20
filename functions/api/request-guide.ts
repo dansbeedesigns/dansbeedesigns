@@ -21,7 +21,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     return json({ error: 'A valid email address is required.' }, 400);
   }
 
-  const guide = guides.find((g) => g.key === guideKey);
+  // Accept both the primary key and the optional printKey
+  const guide = guides.find((g) => g.key === guideKey || g.printKey === guideKey);
   if (!guide) {
     return json({ error: 'Guide not found.' }, 404);
   }
