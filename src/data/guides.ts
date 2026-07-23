@@ -8,7 +8,6 @@ export interface Guide {
   /** Optional path to a cover image under /public/images/guides/ */
   coverImage?: string;
 }
-
 export const guides: Guide[] = [
   {
     key: 'dansbee_finishing_guide_color.pdf',
@@ -29,5 +28,17 @@ export const guides: Guide[] = [
     title: 'Tool Sharpening Guide',
     description:
       'Keep your chisels, hand planes, and carving tools razor-sharp. Covers stones, strops, angles, and the simple routine that makes sharpening fast.',
+  },
+  {
+    key: 'chisel-sharpening-checklist.pdf',
+    title: 'Chisel Sharpening Checklist',
+    description:
+      'A step-by-step checklist for flattening, polishing, and honing a razor edge on your chisels — from new-chisel setup through routine touch-ups.',
+  },
+  {
+    key: 'plane-blade-sharpening-checklist.pdf',
+    title: 'Plane Blade Sharpening Checklist',
+    description:
+      'Everything for tuning up a plane blade and chip breaker, including the ruler trick for polishing the back bevel and removing the burr.',
   },
 ];
