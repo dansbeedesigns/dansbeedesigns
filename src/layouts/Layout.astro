@@ -73,23 +73,59 @@ const siteName = 'Dansbee Designs';
     <div class="accent-bar"></div>
 
     <header class="border-b border-teal-mid/30 bg-teal-deep/40">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <a href="/" class="flex items-center" aria-label="Dansbee Designs home">
           <img
             src="/Logo_2026.svg"
             alt="Dansbee Designs"
-            class="h-14 w-14 md:h-[120px] md:w-[120px]"
+            width="120"
+            height="120"
+            class="h-16 w-16 md:h-[120px] md:w-[120px]"
           />
         </a>
-        <ul class="flex gap-8 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-cream">
+
+        <!-- Desktop nav -->
+        <ul class="hidden md:flex gap-8 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-cream">
           <li><a href="/" class="transition-colors hover:text-amber">Home</a></li>
           <li><a href="/about" class="transition-colors hover:text-amber">About</a></li>
           <li><a href="/services" class="transition-colors hover:text-amber">Services</a></li>
           <li><a href="/blog" class="transition-colors hover:text-amber">Blog</a></li>
           <li><a href="/guides" class="transition-colors hover:text-amber">Free Guides</a></li>
         </ul>
+
+        <!-- Hamburger button (mobile only) -->
+        <button
+          id="menu-toggle"
+          class="md:hidden flex flex-col justify-center gap-1.5 p-2"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="block h-0.5 w-6 bg-cream transition-all duration-200"></span>
+          <span class="block h-0.5 w-6 bg-cream transition-all duration-200"></span>
+          <span class="block h-0.5 w-6 bg-cream transition-all duration-200"></span>
+        </button>
       </nav>
+
+      <!-- Mobile nav drawer -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-teal-mid/30 bg-teal-deep">
+        <ul class="flex flex-col py-4 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-cream">
+          <li><a href="/" class="block px-6 py-3 transition-colors hover:text-amber">Home</a></li>
+          <li><a href="/about" class="block px-6 py-3 transition-colors hover:text-amber">About</a></li>
+          <li><a href="/services" class="block px-6 py-3 transition-colors hover:text-amber">Services</a></li>
+          <li><a href="/blog" class="block px-6 py-3 transition-colors hover:text-amber">Blog</a></li>
+          <li><a href="/guides" class="block px-6 py-3 transition-colors hover:text-amber">Free Guides</a></li>
+        </ul>
+      </div>
     </header>
+
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      toggle?.addEventListener('click', () => {
+        const open = menu?.classList.toggle('hidden') === false;
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    </script>
 
     <main>
       <slot />
