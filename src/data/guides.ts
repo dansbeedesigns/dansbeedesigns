@@ -41,4 +41,10 @@ export const guides: Guide[] = [
     description:
       'Everything for tuning up a plane blade and chip breaker, including the ruler trick for polishing the back bevel and removing the burr.',
   },
+  {
+    key: 'project_fit_scorecard.pdf',
+    title: 'Project Fit Scorecard',
+    description:
+      'A quick reference scorecard for evaluating whether a project is the right fit — covers materials, complexity, timeline, and skill requirements before you commit.',
+  },
 ];
