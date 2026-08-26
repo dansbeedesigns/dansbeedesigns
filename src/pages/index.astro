@@ -281,15 +281,17 @@ import Layout from '../layouts/Layout.astro';
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         });
-        const json = await res.json();
-        if (res.ok) {
+        const text = await res.text();
+        let json;
+        try { json = JSON.parse(text); } catch { json = { error: 'Unexpected server response. Please try again.' }; }
+        if (res.ok && json.ok) {
           form.reset();
           status.textContent = "Message sent — we'll be in touch soon.";
           status.className = 'font-badge text-sm text-teal-mid';
           submit.textContent = 'Send Message';
           submit.disabled = false;
         } else {
-          throw new Error(json.error || 'Something went wrong.');
+          throw new Error(json.error || 'Something went wrong. Please try again.');
         }
       } catch (err) {
         status.textContent = err.message;
