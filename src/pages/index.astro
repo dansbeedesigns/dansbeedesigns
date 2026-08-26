@@ -284,7 +284,7 @@ import Layout from '../layouts/Layout.astro';
         const json = await res.json();
         if (res.ok) {
           form.reset();
-          status.textContent = 'Message sent — we'll be in touch soon.';
+          status.textContent = "Message sent — we'll be in touch soon.";
           status.className = 'font-badge text-sm text-teal-mid';
           submit.textContent = 'Send Message';
           submit.disabled = false;
