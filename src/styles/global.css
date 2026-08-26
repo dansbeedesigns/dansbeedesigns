@@ -18,8 +18,8 @@
 }
 
 body {
-  background-color: var(--color-teal-darkest);
-  color: var(--color-cream);
+  background-color: #f0f6f6;
+  color: #0a2020;
   font-family: var(--font-body);
 }
 
