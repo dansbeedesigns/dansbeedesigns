@@ -37,6 +37,13 @@ body {
   background: linear-gradient(90deg, var(--color-amber) 0%, var(--color-red) 50%, var(--color-teal-mid) 100%);
 }
 
+
+.accent-bar-h {
+  height: 3px;
+  width: 80px;
+  background: linear-gradient(90deg, var(--color-amber), var(--color-teal-mid));
+}
+
 .accent-bar-vertical {
   width: 4px;
   background: linear-gradient(180deg, var(--color-amber) 0%, var(--color-red) 50%, var(--color-teal-mid) 100%);
