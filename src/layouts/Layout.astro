@@ -1,26 +1,17 @@
 ---
 import '../styles/global.css';
-import { constellation } from '../data/site';
 
 interface Props {
   title: string;
   description?: string;
-  image?: string;
-  type?: 'website' | 'article';
-  publishedTime?: Date;
 }
 
 const {
   title,
-  description = 'Woodworking at any age — solid builds, honest process, no sponsors.',
-  image = '/images/og-default.png',
-  type = 'website',
-  publishedTime,
+  description = 'Technology consulting and contracting — systems engineering, cybersecurity, and AI implementation for small and medium businesses.',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImageURL = new URL(image, Astro.site);
-const siteName = 'Dansbee Designs';
 ---
 
 <!doctype html>
@@ -34,123 +25,53 @@ const siteName = 'Dansbee Designs';
     <link rel="canonical" href={canonicalURL} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content={type} />
-    <meta property="og:site_name" content={siteName} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dansbee Designs" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImageURL} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:url" content={canonicalURL} />
-    {type === 'article' && publishedTime && (
-      <meta property="article:published_time" content={publishedTime.toISOString()} />
-    )}
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={ogImageURL} />
 
-    <!-- Structured data -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: siteName,
-      url: Astro.site,
-      description: 'Woodworking at any age — solid builds, honest process, no sponsors.',
-      sameAs: constellation.map((site) => site.url),
-    })} />
-
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500&family=Josefin+Sans:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Josefin+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="antialiased">
     <div class="accent-bar"></div>
 
-    <header class="border-b border-teal-mid/30 bg-teal-deep/40">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <a href="/" class="flex items-center" aria-label="Dansbee Designs home">
-          <img
-            src="/Logo_2026.svg"
-            alt="Dansbee Designs"
-            width="120"
-            height="120"
-            class="h-16 w-16 md:h-[120px] md:w-[120px]"
-          />
+    <header class="border-b border-teal-mid/30 bg-teal-deep/60 sticky top-0 z-50 backdrop-blur-sm">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
+        <a href="/" aria-label="Dansbee Designs home">
+          <img src="/logo.svg" alt="Dansbee Designs" class="h-12 w-auto" />
         </a>
-
-        <!-- Desktop nav -->
-        <ul class="hidden md:flex gap-8 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-cream">
-          <li><a href="/" class="transition-colors hover:text-amber">Home</a></li>
-          <li><a href="/about" class="transition-colors hover:text-amber">About</a></li>
-          <li><a href="/services" class="transition-colors hover:text-amber">Services</a></li>
-          <li><a href="/blog" class="transition-colors hover:text-amber">Blog</a></li>
-          <li><a href="/guides" class="transition-colors hover:text-amber">Free Guides</a></li>
-          <li><a href="/plans" class="transition-colors hover:text-amber">Plans</a></li>
-        </ul>
-
-        <!-- Hamburger button (mobile only) -->
-        <button
-          id="menu-toggle"
-          class="md:hidden flex flex-col justify-center gap-1.5 p-2"
-          aria-label="Toggle menu"
-          aria-expanded="false"
+        <a
+          href="mailto:cale@dansbeedesigns.com"
+          class="font-badge text-xs font-bold uppercase tracking-[0.2em] text-amber hover:text-amber-light transition-colors"
         >
-          <span class="block h-0.5 w-6 bg-cream transition-all duration-200"></span>
-          <span class="block h-0.5 w-6 bg-cream transition-all duration-200"></span>
-          <span class="block h-0.5 w-6 bg-cream transition-all duration-200"></span>
-        </button>
-      </nav>
-
-      <!-- Mobile nav drawer -->
-      <div id="mobile-menu" class="hidden md:hidden border-t border-teal-mid/30 bg-teal-deep">
-        <ul class="flex flex-col py-4 font-badge text-sm font-semibold uppercase tracking-[0.1em] text-cream">
-          <li><a href="/" class="block px-6 py-3 transition-colors hover:text-amber">Home</a></li>
-          <li><a href="/about" class="block px-6 py-3 transition-colors hover:text-amber">About</a></li>
-          <li><a href="/services" class="block px-6 py-3 transition-colors hover:text-amber">Services</a></li>
-          <li><a href="/blog" class="block px-6 py-3 transition-colors hover:text-amber">Blog</a></li>
-          <li><a href="/guides" class="block px-6 py-3 transition-colors hover:text-amber">Free Guides</a></li>
-          <li><a href="/plans" class="block px-6 py-3 transition-colors hover:text-amber">Plans</a></li>
-        </ul>
+          Get in Touch
+        </a>
       </div>
     </header>
-
-    <script>
-      const toggle = document.getElementById('menu-toggle');
-      const menu = document.getElementById('mobile-menu');
-      toggle?.addEventListener('click', () => {
-        const open = menu?.classList.toggle('hidden') === false;
-        toggle.setAttribute('aria-expanded', String(open));
-      });
-    </script>
 
     <main>
       <slot />
     </main>
 
-    <footer class="mt-24 border-t border-teal-mid/30 bg-teal-deep/40">
-      <div class="mx-auto max-w-6xl px-6 py-10 text-center">
-        <p class="font-badge text-xs font-semibold uppercase tracking-[0.2em] text-amber-light">
-          No Sponsors &middot; No Affiliate Links &middot; Just Honest Experience
+    <footer class="border-t border-teal-mid/30 bg-teal-deep/40">
+      <div class="mx-auto max-w-5xl px-6 py-10 text-center">
+        <p class="font-badge text-xs font-semibold uppercase tracking-[0.2em] text-amber">
+          Consulting &middot; Contracting &middot; Technology Solutions
         </p>
-
-        <ul class="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-badge text-xs font-semibold uppercase tracking-[0.1em] text-cream/80">
-          {constellation.map((site) => (
-            <li>
-              <a href={site.url} target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-amber">
-                {site.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <p class="mt-6 font-body text-sm text-cream/70">
-          &copy; {new Date().getFullYear()} Dansbee Designs. Peace, love, and sawdust.
+        <p class="mt-4 font-badge text-xs text-cream/50">
+          &copy; {new Date().getFullYear()} Dansbee Designs &mdash; Cale Dansbee
         </p>
       </div>
     </footer>
