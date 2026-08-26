@@ -37,7 +37,7 @@ export async function onRequestPost(context) {
       });
     } catch (fetchErr) {
       return new Response(JSON.stringify({ error: 'Could not reach email service: ' + fetchErr.message }), {
-        status: 502,
+        status: 500,
         headers: { 'Content-Type': 'application/json' }
       });
     }
@@ -46,7 +46,7 @@ export async function onRequestPost(context) {
 
     if (!resendResponse.ok) {
       return new Response(JSON.stringify({ error: 'Email service error (' + resendResponse.status + '): ' + resendText }), {
-        status: 502,
+        status: 500,
         headers: { 'Content-Type': 'application/json' }
       });
     }
